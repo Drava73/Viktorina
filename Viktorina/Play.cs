@@ -8,6 +8,9 @@ namespace Viktorina
 {
     class Play : RegistrationAndLogin
     {
-
+        public void start()
+        {
+            
+        }
     }
 }

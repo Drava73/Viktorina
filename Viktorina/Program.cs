@@ -10,9 +10,11 @@ namespace Viktorina
     {
         static void Main(string[] args)
         {
-            Play ob1 = new Play();
+            /*Play ob1 = new Play();
             ob1.Reg();
-            ob1.LoginPerson();
+            ob1.LoginPerson();*/
+            QuizHistory ob1 = new QuizHistory();
+            ob1.Run();
         }
     }
 }
