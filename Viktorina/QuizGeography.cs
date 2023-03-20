@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-
 namespace Viktorina
 {
-    public class QuizHistory
+    public class QuizGeography 
     {
         public string[] questions;
         public string[][] answers;
         public int[] correctAnswers;
         public int bal;
 
-        public QuizHistory()
+        public QuizGeography()
         {
-            string[] lines = File.ReadAllLines("questionsHistory.txt", Encoding.GetEncoding(1251));
+            string[] lines = File.ReadAllLines("questionsGeography.txt", Encoding.GetEncoding(1251));
             int num = int.Parse(lines[0]);
             questions = new string[num];
             answers = new string[num][];
@@ -30,7 +29,7 @@ namespace Viktorina
                 correctAnswers[i] = int.Parse(lines[index++]);
             }
         }
-        public void RunH()
+        public void RunG()
         {
             for (int i = 0; i < questions.Length; i++)
             {
@@ -56,3 +55,4 @@ namespace Viktorina
         }
     }
 }
+
